@@ -1,0 +1,6 @@
+command /pos:
+    executable by: players
+    trigger:
+        set {loc} to player's location
+        play sound "minecraft:block.note_block.pling" with volume 1 and pitch 1
+        send "あなたは、&e%world%&r 内の &cX:%{x-coordinate}% &aY:%{y-coordinate}% &bZ:%{z-coordinate}% &rに居ます!"
